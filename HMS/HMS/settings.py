@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'registration',
     'login',
     'appointment',
+    'medical_report',
 
     'corsheaders'
 ]

@@ -5,6 +5,7 @@ import json
 from registration . models import doctors, patients
 from . models import appointment_data
 
+
 #to create new appointment by the patient
 def patient_appointment(request):
 
@@ -35,21 +36,29 @@ def receptionist_appointment_requests(request):
 
 
 
-#to show the status of appointment to the patient
- # BUT THIS FUNCTION IS ALSO MADE IN PATIENT APP
-# def patient_appointment_details(request):
-# 	if request.method == "POST":
-# 		data=json.loads(request.body)
-# 		print(data)
-# 		id=data['id']
+#when receptionist view the appointment request 
+#to show one new appointment request details at receptionist
+def patient_appointment_request_details(request):
+	if request.method == "POST":
+		data=json.loads(request.body)
+		print(data)
+		appointment_id=data['id']
 
 
 
 
-# 		appt_request=list(appointment_data.objects.filter(id=id).order_by('date').values('id','doctor__name','patient__name','status','doctor_id','doctor__department','patient_id','patient__phone_no','problem','payment_status','before_disease','after_disease','date','time','time_of_registering_appointment','prescription','receptionist_response','receptionist_reason','doctor_response'))
+		appt_request=list(appointment_data.objects.filter(id=appointment_id).values('id','doctor__name','patient__name','status','doctor_id','doctor__department','patient_id','patient__phone_no','problem','payment_status','before_disease','date','time','time_of_registering_appointment'))
 
-# 		return JsonResponse(appt_request,safe=False)
-	#
+		return JsonResponse(appt_request,safe=False)
+
+
+#to show all the appointments request to receptionist excluding those which have been passed by the doctor
+def appointments_history(request):
+	if request.method == "GET":
+		appt_request=list(appointment_data.objects.all().exclude(status="Done").order_by('date').values('id','doctor__name','patient__name','status','payment_status','date','time','time_of_registering_appointment','receptionist_response','receptionist_reason','doctor_response'))
+
+		return JsonResponse(appt_request,safe=False)
+
 
 
 	#to update the response given by the receptionist and the doctor
@@ -113,7 +122,7 @@ def doctor_appointment_requests(request):
 
 
 
-		appt_request=list(appointment_data.objects.filter(doctor_id=pk).filter(doctor_response="pending").filter(receptionist_response="approved").order_by('date').values('id','doctor__name','patient__name','status','payment_status','date','time','time_of_registering_appointment','receptionist_response','receptionist_reason','doctor_response'))
+		appt_request=list(appointment_data.objects.filter(doctor_id=pk).filter(doctor_response="pending").filter(receptionist_response="approved").order_by('date').values('id','patient_id','patient__name','date','time'))
 
 		return JsonResponse(appt_request,safe=False)
 
@@ -125,7 +134,7 @@ def show_appointment_request_details(request):
 		data=json.loads(request.body)
 		id=data['id']
 		print(data)
-		patient_data=list(appointment_data.objects.filter(id=id).order_by("date").values('id','status','patient__name','doctor_response','doctor_reason','doctor__name','problem','date','time','before_disease','is_modify_by_doc'))
+		patient_data=list(appointment_data.objects.filter(id=id).order_by("date").values('id','status','patient__name','patient_id','patient__phone_no','problem','date','time','before_disease'))
 
 
 		return JsonResponse(patient_data,safe=False)

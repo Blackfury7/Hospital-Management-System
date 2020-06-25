@@ -4,6 +4,7 @@ from django.http import HttpResponse,JsonResponse,HttpRequest,Http404
 import json
 from registration . models import patients,doctors
 from appointment . models import appointment_data
+from django.db.models import Q
 
 #to show the basic details of patient which were recorded at the time of registration
 def patient_basic_details(request):
@@ -46,7 +47,7 @@ def appointment_request(request):
 		data=json.loads(request.body)
 		id=data['id']
 		print(data)
-		patient_data=list(appointment_data.objects.filter(patient_id=id).filter(status="pending").order_by("date").values('id','status','patient__name','receptionist_response','receptionist_reason','doctor_response','doctor_reason','doctor__name','doctor_id','problem','date','time','before_disease','is_modify_by_doc'))
+		patient_data=list(appointment_data.objects.filter(patient_id=id).filter(Q(status="pending")|Q(status='rejected')|Q(status='Active')).order_by("date").values('id','status','patient__name','receptionist_response','receptionist_reason','doctor_response','doctor_reason','doctor__name','doctor_id','problem','date','time','before_disease','is_modify_by_doc'))
 
 
 		return JsonResponse(patient_data,safe=False)

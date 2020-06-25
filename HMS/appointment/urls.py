@@ -7,6 +7,8 @@ urlpatterns=[
 
 path('patient/', views.patient_appointment, name="patient_appointment"),
 path('receptionist/requests/', views.receptionist_appointment_requests, name="receptionist_appointment_requests"),
+path('receptionist/request_details/', views.patient_appointment_request_details, name="receptionist_appointment_requests"),
+path('history/', views.appointments_history, name="appointments_history"),
 
 path('doctor/requests/', views.doctor_appointment_requests, name="doctor_appointment_requests"),
 path('update_response/', views.updating_response_of_appointment, name="updating_response"),

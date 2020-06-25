@@ -7,6 +7,14 @@ from appointment . models import appointment_data
 from django.db.models import Avg, Count, Min, Sum
 
 
+
+
+
+
+
+
+
+
 #to show the basic details of the doctor (registration details)
 def doctor_dashboard(request):
 	

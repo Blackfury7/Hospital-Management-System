@@ -11,16 +11,16 @@ def add_medical_report(request):
 	if request.method == "POST":
 		data=json.loads(request.body)
 		appointment_id=data['id']
+		print(data)
+	
+		appointment_data.objects.filter(id=appointment_id).update(status="Done",**data)
+		message='medical report generated'
 
-		try:
-			appointment_data.objects.filter(id=appointment_id).update(status="Done",**data)
-			message='medical report generated'
-
-		except:
-			message='Error:medical report could not generated'
+		
 
 
 		return JsonResponse(message,safe=False)
+
 
 
 
