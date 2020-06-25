@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'registration',
+    'login',
+    'appointment',
 
     'corsheaders'
 ]
@@ -87,7 +90,7 @@ WSGI_APPLICATION = 'HMS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mydjango3',
+        'NAME': 'hms',
         'USER': 'root',
         'PASSWORD': '',
         'HOST' : 'localhost',

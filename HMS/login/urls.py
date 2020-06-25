@@ -1,10 +1,10 @@
-from django.url import path
+from django.urls import path
 from . import views
 
 
-urlspatterns=[
+urlpatterns=[
 
-path('', login, name="login"),
+path('', views.login, name="login"),
 	
 
 

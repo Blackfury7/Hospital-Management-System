@@ -9,9 +9,10 @@ from registration . models import doctors, patients
 
 def login(request):
 	if request.method=="POST":
-		data=json.load(request)
+		data=json.loads(request.body)
+		print(data)
 		username=data['username']
-		passwrd=data['password']
+		password=data['password']
 
 
 		
@@ -19,9 +20,10 @@ def login(request):
 		patient=patients.objects.filter(username=username, password= password)
 		if username=="receptionist" and password=="1234":
 			message="receptionist"
-		elif not doctor:
+			
+		elif doctor.exists():
 			message="doctor"
-		elif not patient:
+		elif patient.exists():
 			message="patient"
 		else:
 			message="invalid details"
