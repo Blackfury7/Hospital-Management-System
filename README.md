@@ -1,3 +1,6 @@
+## Project in Progress: Some functionalities may not work right now as I am trying to scale the application by containerizing it and adding the Nginx as Reverse Proxy and Load Balancer
+ 
+
 # Hospital-Management-System
 Hospital Management System - backend
 
