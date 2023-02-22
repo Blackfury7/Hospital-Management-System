@@ -1,4 +1,4 @@
-## The project is currently in progress, and some functionalities may not be fully functional at this time. We are working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer.
+## The project is currently in progress, and some functionalities may not be fully functional at this time. I are working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer.
 
 <br>
 <br>
