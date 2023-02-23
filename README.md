@@ -16,17 +16,20 @@ Frontend : HTML, CSS, JavaScript and Angular js
 
 **Hospital Management System** 
 
-* It has 3 portal for doctor, patient and a Receptionist/Manager (admin) portal. 
+* It has Three Dashboards for the doctor, patient and  Manager (admin) portal. 
 
-* Doctor and patients can sign-up and sign in. 
+* Authentication and authorization have been implemented, and different access roles have been assigned to doctors, patients, and managers.
 
-* Doctor signup process is first verified by the receptionist and then afterwards doctor can login. 
+* Both doctors and patients can sign up and sign in to the platform.
 
-* Patient can book an appointment which goes to manager for appointing doctor or modifying the schedule of the appointment ,and
-the notification of same is sent to patient. 
+* The doctor's sign-up process is verified by the manager before the doctor can log in.
 
-* Doctors can also create patients report who has visited him and list of all the patients that has visited him.
+* Patients can book appointments, which are then reviewed by the manager to schedule an appropriate doctor or adjust the appointment time. 
 
-* All the data within the Hospital can be seen by the receptionist.
+* The patient is notified of any changes made to their appointment.
+
+* Doctors have the ability to create reports for patients who have visited them and to view a list of all patients they have treated.
+
+*The receptionist can access and view all data within the hospital's platform.
 
 
