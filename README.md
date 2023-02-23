@@ -4,7 +4,7 @@
 <br>
  
 
-# Hospital-Management-System
+# Hospital-Management-System Portal
 Hospital Management System - backend
 
 **Tech used :**
@@ -30,6 +30,6 @@ Frontend : HTML, CSS, JavaScript and Angular js
 
 * Doctors have the ability to create reports for patients who have visited them and to view a list of all patients they have treated.
 
-*The receptionist can access and view all data within the hospital's platform.
+* The receptionist can access and view all data within the hospital's platform.
 
 
