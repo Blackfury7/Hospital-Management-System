@@ -3,7 +3,6 @@
 <br>
 <br>
  
-
 # Hospital-Management-System Portal
 Hospital Management System - backend
 
@@ -14,9 +13,9 @@ Backend: Django, MySQL
 Frontend : HTML, CSS, JavaScript and Angular js 
 
 
-**Hospital Management System** 
+## About the System
 
-* It has Three Dashboards for the doctor, patient and  Manager (admin) portal. 
+* The Hospital Management System includes dashboards for doctors, patients, and managers (admin).
 
 * Authentication and authorization have been implemented, and different access roles have been assigned to doctors, patients, and managers.
 
@@ -33,3 +32,24 @@ Frontend : HTML, CSS, JavaScript and Angular js
 * The receptionist can access and view all data within the hospital's platform.
 
 
+## Technologies Used
+
+- Backend: Django, MySQL
+- Frontend: HTML, CSS, JavaScript, AngularJS
+
+
+## Getting Started
+
+1. Clone the repo: `git clone https://github.com/example/hospital-management-system.git`
+2. Install the dependencies: `pip install -r requirements.txt`
+3. Start the development server: `python manage.py runserver`
+
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request.
+
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
