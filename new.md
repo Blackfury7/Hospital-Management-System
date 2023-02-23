@@ -1,33 +1,50 @@
-Hospital Management System Portal
-This is the backend of a hospital management system developed using Django and MySQL for the database. The frontend is built using HTML, CSS, JavaScript, and AngularJS.
+# Hospital-Management-System Portal
+Hospital Management System - backend
 
-Features
-The hospital management system includes the following features:
-
-Three dashboards for doctors, patients, and managers (admin).
-Authentication and authorization with different access roles assigned to doctors, patients, and managers.
-Sign-up and sign-in functionality for doctors and patients.
-Manager verification for doctor sign-up before they can log in.
-Patients can book appointments, which are reviewed by the manager for scheduling an appropriate doctor or adjusting the appointment time.
-Notifications sent to patients for any changes made to their appointment.
-Doctors can create reports for patients who have visited them and view a list of all patients they have treated.
-Receptionist can access and view all data within the hospital management system.
-Technologies Used
-The following technologies were used in the development of the hospital management system:
+**Tech used :**
 
 Backend: Django, MySQL
-Frontend: HTML, CSS, JavaScript, and AngularJS
-Getting Started
-To get started with the hospital management system, follow these steps:
 
-Clone the repository.
-Install the required dependencies.
-Run the Django development server.
-Contributors
-John Doe
-Jane Smith
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+Frontend : HTML, CSS, JavaScript and Angular js 
 
 
+## About the System
 
+* The Hospital Management System includes dashboards for doctors, patients, and managers (admin).
+
+* Authentication and authorization have been implemented, and different access roles have been assigned to doctors, patients, and managers.
+
+* Both doctors and patients can sign up and sign in to the platform.
+
+* The doctor's sign-up process is verified by the manager before the doctor can log in.
+
+* Patients can book appointments, which are then reviewed by the manager to schedule an appropriate doctor or adjust the appointment time. 
+
+* The patient is notified of any changes made to their appointment.
+
+* Doctors have the ability to create reports for patients who have visited them and to view a list of all patients they have treated.
+
+* The receptionist can access and view all data within the hospital's platform.
+
+
+## Technologies Used
+
+- Backend: Django, MySQL
+- Frontend: HTML, CSS, JavaScript, AngularJS
+
+
+## Getting Started
+
+1. Clone the repo: `git clone https://github.com/example/hospital-management-system.git`
+2. Install the dependencies: `pip install -r requirements.txt`
+3. Start the development server: `python manage.py runserver`
+
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request.
+
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
