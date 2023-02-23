@@ -1,7 +1,7 @@
-## The project is currently in progress, and some functionalities may not be fully functional at this time. I am working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer.
+<!-- ## The project is currently in progress, and some functionalities may not be fully functional at this time. I am working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer.
 
 <br>
-<br>
+<br> -->
  
 # Hospital-Management-System Portal
 Hospital Management System - backend
@@ -43,6 +43,15 @@ Frontend : HTML, CSS, JavaScript and Angular js
 1. Clone the repo: `git clone https://github.com/example/hospital-management-system.git`
 2. Install the dependencies: `pip install -r requirements.txt`
 3. Start the development server: `python manage.py runserver`
+
+
+## Note:
+
+The project is currently in progress, and some functionalities may not be fully functional at this time. 
+
+I am working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer. 
+
+Thank you for your patience and understanding.
 
 
 ## Contributing
