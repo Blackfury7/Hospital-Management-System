@@ -1,52 +1,24 @@
-<!-- ## The project is currently in progress, and some functionalities may not be fully functional at this time. I am working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer.
+# Hospital Management System Django Project
 
-<br>
-<br> -->
- 
-# Hospital-Management-System Portal
-Hospital Management System - backend
+Welcome to the Hospital Management System Django Project repository. This project is designed to provide an efficient and user-friendly solution for managing hospital records, appointments, and administrative tasks. The system is divided into three main panels: Patient, Doctor, and Admin, each catering to specific functionalities.
 
-**Tech used :**
+## Features
 
-Backend: Django, MySQL
+### Patient Panel
+- Patients can register and access the system upon admin approval.
+- During registration, patients can provide details about their symptoms.
+- Patients can conveniently view their appointments and hospital bills.
 
-Frontend : HTML, CSS, JavaScript and Angular js 
+### Doctor Panel
+- Doctors can register and gain access to the system upon admin approval.
+- Doctors can review patient information and appointments for their assigned patients.
+- Doctors have the authority to manage appointments for their patients.
 
-
-## About the System
-
-* The Hospital Management System includes dashboards for doctors, patients, and managers (admin).
-
-* Authentication and authorization have been implemented, and different access roles have been assigned to doctors, patients, and managers.
-
-* Both doctors and patients can sign up and sign in to the platform.
-
-* The doctor's sign-up process is verified by the manager before the doctor can log in.
-
-* Patients can book appointments, which are then reviewed by the manager to schedule an appropriate doctor or adjust the appointment time. 
-
-* The patient is notified of any changes made to their appointment.
-
-* Doctors have the ability to create reports for patients who have visited them and to view a list of all patients they have treated.
-
-* The receptionist can access and view all data within the hospital's platform.
-
-
-## Technologies Used
-
-- Backend: Django
-- Frontend: HTML, CSS, JavaScript
-
-
-## Getting Started
-
-1. Clone the repo: `git clone https://github.com/example/hospital-management-system.git`
-2. Install the dependencies: `pip install -r requirements.txt`
-3. Start the development server: `python manage.py runserver`
-
-
-
-
-
+### Admin Panel
+- The admin has complete control over the system's operations.
+- Admin is responsible for approving or declining user registration requests.
+- The admin can schedule and manage appointments for patients and doctors.
+- Billing features allow admin to generate bills, including room charges, doctor fees, and medicines.
+- Admin can manage patient discharges and related records.
 
 
