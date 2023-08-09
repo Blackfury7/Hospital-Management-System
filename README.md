@@ -34,8 +34,8 @@ Frontend : HTML, CSS, JavaScript and Angular js
 
 ## Technologies Used
 
-- Backend: Django, MySQL
-- Frontend: HTML, CSS, JavaScript, AngularJS
+- Backend: Django
+- Frontend: HTML, CSS, JavaScript
 
 
 ## Getting Started
@@ -45,20 +45,8 @@ Frontend : HTML, CSS, JavaScript and Angular js
 3. Start the development server: `python manage.py runserver`
 
 
-## Note:
-
-The project is currently in progress, and some functionalities may not be fully functional at this time. 
-
-I am working on scaling the application by containerizing it and implementing Nginx as a reverse proxy and load balancer. 
-
-Thank you for your patience and understanding.
 
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request.
 
 
-## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
